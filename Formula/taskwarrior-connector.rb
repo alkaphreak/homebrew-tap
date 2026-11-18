@@ -1,25 +1,25 @@
 class TaskwarriorConnector < Formula
   desc "Local daemon behind the Send to Taskwarrior Hardened Firefox extension: turns a POSTed page into a `task add`."
   homepage "https://addons.mozilla.org/firefox/addon/cb7d03e975ee4c8fad4b/"
-  version "0.4.0"
+  version "0.5.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/alkaphreak/Taskwarrior-Connector/releases/download/v0.4.0/taskwarrior-connector-aarch64-apple-darwin.tar.xz"
-      sha256 "1c56167f539ed9db431ca681040c7563188f4f0ef2d04f31a5fae79ab903ef78"
+      url "https://github.com/alkaphreak/Taskwarrior-Connector/releases/download/v0.5.0/taskwarrior-connector-aarch64-apple-darwin.tar.xz"
+      sha256 "ed94f05f12cde8414ea6dd0471e1127a584564765dc0b04b3f859c6b9b92dac4"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/alkaphreak/Taskwarrior-Connector/releases/download/v0.4.0/taskwarrior-connector-x86_64-apple-darwin.tar.xz"
-      sha256 "af39d345b598f29bfe782da01d22754d0e7f8b4a04e1c7b2426727ab5461486d"
+      url "https://github.com/alkaphreak/Taskwarrior-Connector/releases/download/v0.5.0/taskwarrior-connector-x86_64-apple-darwin.tar.xz"
+      sha256 "621d1c16bfc313f1a60613bbe4ed8afabe0281ae91cee1448eb2699acd7ba2ab"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/alkaphreak/Taskwarrior-Connector/releases/download/v0.4.0/taskwarrior-connector-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "0b43b5ffc646a9259be144754539ec0d70635ae62f238e01b8bd854cea98ce8b"
+      url "https://github.com/alkaphreak/Taskwarrior-Connector/releases/download/v0.5.0/taskwarrior-connector-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "c42ebd40300fb513e00e9b0b6adef872e44938df33b05c1f33f00cf7df065a47"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/alkaphreak/Taskwarrior-Connector/releases/download/v0.4.0/taskwarrior-connector-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "4b7e82b67ff411f0106269bbacf5dd9ac3cbf7acc008180c2621c2f33a17a56b"
+      url "https://github.com/alkaphreak/Taskwarrior-Connector/releases/download/v0.5.0/taskwarrior-connector-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "474a915deb3586d4436d0110dc04e0f904baafb164abf77d0006c5ffb2ec7d9c"
     end
   end
   license "GPL-3.0-only"
